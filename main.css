@@ -1,0 +1,129 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111111;
+  height: 100vh;
+}
+
+.wrapper{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.main-content{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+}
+
+.heading{
+  text-align: center;
+}
+
+.my-profile{
+  margin-right: 50px;
+  height: 100%;
+  flex-basis: 50%;
+}
+
+.profile{
+  display: flex;
+  align-items: center;
+
+  background-color: #ececec;
+  border-radius: 3px;
+  border: 1px solid rgb(221, 221, 221);
+  padding: 20px;
+}
+
+.avatar{
+  min-width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 35px;
+}
+
+.avatar__pic{
+  max-width: 100%;
+}
+
+.nickname{
+  font-weight: bold;
+  font-size: 120%;
+  color: rgb(40, 50, 71);
+  margin-bottom: 15px;
+}
+
+.user-name{
+  white-space: nowrap;
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+.phone{
+  display: block;
+  text-decoration: none;
+}
+
+.edit-profile{
+  flex-basis: 50%;
+}
+
+.form{
+  background-color: #ececec;
+  border-radius: 3px;
+  border: 1px solid rgb(221, 221, 221);
+  padding: 20px;
+}
+
+.form__list{
+  margin: 0;
+  padding: 0;
+}
+
+.form__item{
+  list-style: none;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.form__item:last-child{
+  margin-bottom: 0;
+}
+
+.form__label{
+  display: block;
+  flex-basis: 30%;
+}
+
+.form__input{
+  flex-grow: 1;
+}
+
+.form__inline-label{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.form__inline-input{
+  margin-right: 10px;
+}
+
+.form__button{
+  margin: 0 auto;
+  padding: 2px 5px;
+}
+
+.form__title{
+  margin-right: 15px;
+}
